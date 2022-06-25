@@ -34,6 +34,7 @@ class DashboardFragment : Fragment() {
         binding.btnLike.setOnClickListener {
             childFragmentManager.beginTransaction().add(LikeFragment.newInstance("",""),"likeFragment").commitAllowingStateLoss()
         }
+
         binding.btnComment.setOnClickListener {
             childFragmentManager.beginTransaction().add(CommentFragment.newInstance("",""),"commentFragment").commitAllowingStateLoss()
         }
